@@ -1,0 +1,9 @@
+{
+  "name": "@nebulone/standards",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^8.0.28"
+  }
+}

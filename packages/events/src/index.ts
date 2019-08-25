@@ -1,5 +1,5 @@
 import {EventEmitter} from 'events';
-import {LoggerInterface} from "../../Standarts/src/LoggerInterface";
+import {LoggerInterface} from "@nebulone/standards/LoggerInterface";
 
 export class EventBus {
 

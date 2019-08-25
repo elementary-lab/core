@@ -1,10 +1,9 @@
 import {MessageEntity} from '../Entities/MessageEntity';
 import {AbstractTarget} from './AbstractTarget';
-import {TargetConfigInterface} from '@Core/Log/Interface/LoggerConfigInterface';
 import * as Sentry from '@sentry/node';
 import {StackFrame} from 'stacktrace-parser';
 import {Stacktrace} from '@sentry/node';
-import {Core} from '@Core/App';
+import {TargetConfigInterface} from "@nebulone/logger/Interface/LoggerConfigInterface";
 
 export class SentryTarget extends AbstractTarget implements SentryTargetConfig {
 
@@ -34,7 +33,7 @@ export class SentryTarget extends AbstractTarget implements SentryTargetConfig {
                     stacktrace: this.convertTrace(item.trace)
                 });
             }
-            Core.debug('Send event to Sentry', [eventId], 'Logger');
+            //Core.debug('Send event to Sentry', [eventId], 'Logger');
         });
     }
 

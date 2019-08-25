@@ -1,0 +1,9 @@
+{
+  "name": "@nebulone/events",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "@nebulone/standards": "0.0.1",
+    "events": "^3.0.0"
+  }
+}

@@ -1,7 +1,7 @@
 import {MessageEntity} from '../Entities/MessageEntity';
 import {LogLevel, LogLevelString} from '../Types';
 import {AbstractTarget} from './AbstractTarget';
-import {TargetConfigInterface} from '@Core/Log/Interface/LoggerConfigInterface';
+import {TargetConfigInterface} from "@nebulone/logger/Interface/LoggerConfigInterface";
 
 export class ConsoleTarget extends AbstractTarget implements ConsoleTargetConfig {
 

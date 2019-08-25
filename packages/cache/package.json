@@ -1,0 +1,13 @@
+{
+  "name": "@nebulone/cache",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^8.0.28",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "@nebulone/standards": "0.0.1"
+  }
+}

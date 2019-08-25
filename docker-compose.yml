@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  app:
+    container_name: ${COMPOSE_PROJECT_NAME}_app
+    build:
+      context: .
+      dockerfile: .docker/app/Dockerfile
+    stop_signal: INT
+    user: 1000:1000
+    tty: true
+    volumes:
+      - .:/app/:rw

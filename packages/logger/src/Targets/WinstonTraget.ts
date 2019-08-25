@@ -1,9 +1,9 @@
 import {MessageEntity} from '../Entities/MessageEntity';
 import {LogLevel, LogLevelString} from '../Types';
 import {AbstractTarget} from './AbstractTarget';
-import {TargetConfigInterface} from '@Core/Log/Interface/LoggerConfigInterface';
 import * as winston from 'winston';
 import {LoggerOptions} from 'winston';
+import {TargetConfigInterface} from "@nebulone/logger/Interface/LoggerConfigInterface";
 
 export class WinstonTarget extends AbstractTarget implements FileLogConfigInterface {
 
