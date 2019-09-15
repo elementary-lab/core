@@ -1,5 +1,5 @@
 {
-  "name": "@nebulone/logger",
+  "name": "@elementary-lab/logger",
   "version": "1.0.1",
   "description": "",
   "license": "MIT",
@@ -9,6 +9,6 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@nebulone/standards": "^1.0.1"
+    "@elementary-lab/standards": "^1.0.1"
   }
 }

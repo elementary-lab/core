@@ -3,7 +3,7 @@ import {LogLevel, LogLevelString} from '../Types';
 import {AbstractTarget} from './AbstractTarget';
 import * as winston from 'winston';
 import {LoggerOptions} from 'winston';
-import {TargetConfigInterface} from "@nebulone/logger/Interface/LoggerConfigInterface";
+import {TargetConfigInterface} from "@elementary-lab/logger/Interface/LoggerConfigInterface";
 
 export class WinstonTarget extends AbstractTarget implements FileLogConfigInterface {
 

@@ -1,5 +1,5 @@
 import {MessageEntity} from '../Entities/MessageEntity';
-import {LogLevel} from "@nebulone/logger/Types";
+import {LogLevel} from "@elementary-lab/logger/Types";
 
 export interface LoggerConfigInterface {
     flushInterval: number;

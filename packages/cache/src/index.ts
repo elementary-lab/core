@@ -1,4 +1,4 @@
-import {CacheInterface} from "@nebulone/standards/CacheInterface";
+import {CacheInterface} from "@elementary-lab/standards/CacheInterface";
 
 export abstract class Cache  implements CacheInterface {
 

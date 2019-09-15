@@ -1,5 +1,5 @@
 {
-  "name": "@nebulone/cache",
+  "name": "@elementary-lab/cache",
   "version": "1.0.1",
   "description": "",
   "license": "MIT",
@@ -8,6 +8,6 @@
     "redis": "^2.8.0"
   },
   "devDependencies": {
-    "@nebulone/standards": "^1.0.1"
+    "@elementary-lab/standards": "^1.0.1"
   }
 }

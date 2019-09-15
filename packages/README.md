@@ -1,24 +1,24 @@
-# nebulone Packages
+# elementary-lab Packages
 
 ## Packages
 
-1. [logger](https://github.com/SomeBlackMagic/nebulone/tree/master/packages/logger)
-2. [event bus](https://github.com/SomeBlackMagic/nebulone/tree/master/packages/generate-plugin)
+1. [logger](https://github.com/SomeBlackMagic/elementary-lab/tree/master/packages/logger)
+2. [event bus](https://github.com/SomeBlackMagic/elementary-lab/tree/master/packages/generate-plugin)
 
 ## Generic Installation
 
 1. Standalone installation of packages
 
 ```shell
-npm install @nebulone/<package>
+npm install @elementary-lab/<package>
 ```
 
-2. Installation of respective `package` with `nebulone` [Recommended]
+2. Installation of respective `package` with `elementary-lab` [Recommended]
 
 ```shell
-npm install nebulone @nebulone/<package>
+npm install elementary-lab @elementary-lab/<package>
 ```
 
 ---
 
-[Back to nebulone](https://github.com/SomeBlackMagic/nebulone)
+[Back to elementary-lab](https://github.com/SomeBlackMagic/elementary-lab)

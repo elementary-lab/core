@@ -1,6 +1,6 @@
 
 import {ClientOpts, RedisClient} from "redis";
-import {Cache} from "@nebulone/cache/index";
+import {Cache} from "@elementary-lab/cache/index";
 
 export class RedisCache extends Cache {
 
