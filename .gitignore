@@ -41,3 +41,4 @@ junit.xml
 
 #typescript source maps
 packages/**/*.map
+packages/**/src/*.js

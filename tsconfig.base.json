@@ -39,10 +39,10 @@
 		/* Module Resolution Options */
 		"moduleResolution": "node", /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
 		"paths": {
-			"@nebulone/logger/*": ["packages/logger/src/*"],
-			"@nebulone/events/*": ["packages/events/src/*"],
-			"@nebulone/standards/*": ["packages/standards/src/*"],
-			"@nebulone/cache/*": ["packages/cache/src/*"]
+			"@elementary-lab/logger/*": ["packages/logger/src/*"],
+			"@elementary-lab/events/*": ["packages/events/src/*"],
+			"@elementary-lab/standards/*": ["packages/standards/src/*"],
+			"@elementary-lab/cache/*": ["packages/cache/src/*"]
 		},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
 		"baseUrl": "./",
 		// "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */

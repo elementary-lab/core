@@ -1,9 +1,9 @@
 {
-  "name": "@nebulone/events",
+  "name": "@elementary-lab/events",
   "version": "1.0.1",
   "license": "MIT",
   "dependencies": {
-    "@nebulone/standards": "^1.0.1",
+    "@elementary-lab/standards": "^1.0.1",
     "events": "^3.0.0"
   }
 }
