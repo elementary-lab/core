@@ -1,15 +1,14 @@
 {
   "name": "@nebulone/logger",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "",
   "license": "MIT",
   "dependencies": {
+    "@sentry/node": "5.5.0",
     "stacktrace-parser": "^0.1.6",
-    "winston": "^3.2.1",
-    "@sentry/node": "5.5.0"
+    "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@nebulone/standards": "0.0.1"
+    "@nebulone/standards": "^1.0.1"
   }
-
 }
