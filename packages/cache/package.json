@@ -1,6 +1,6 @@
 {
   "name": "@elementary-lab/cache",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "license": "MIT",
   "dependencies": {
@@ -8,6 +8,6 @@
     "redis": "^2.8.0"
   },
   "devDependencies": {
-    "@elementary-lab/standards": "^1.0.1"
+    "@elementary-lab/standards": "^1.0.2"
   }
 }
