@@ -1,6 +1,6 @@
 {
   "name": "@elementary-lab/logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "license": "MIT",
   "dependencies": {
@@ -9,6 +9,6 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@elementary-lab/standards": "^1.0.2"
+    "@elementary-lab/standards": "^1.0.3"
   }
 }

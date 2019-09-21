@@ -1,9 +1,9 @@
 {
   "name": "@elementary-lab/events",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "dependencies": {
-    "@elementary-lab/standards": "^1.0.2",
+    "@elementary-lab/standards": "^1.0.3",
     "events": "^3.0.0"
   }
 }
