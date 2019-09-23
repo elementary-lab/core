@@ -1,10 +1,12 @@
 {
+  "name": "elementary-lab",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "bootstrap": "yarn clean:all && yarn && lerna bootstrap",
     "build": "tsc",
-    "format": "eslint --fix . --ext .js,.ts",
-    "lint": "eslint . --ext .js,.ts",
+    "format": "eslint --fix . --ext .ts",
+    "lint": "eslint . --ext .ts",
     "clean:all": "rimraf node_modules packages/*/{node_modules}",
     "publish:monorepo": "npm run format && npm run test && lerna publish -m \"chore: monorepo version update\""
   },
@@ -16,9 +18,9 @@
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "prettier": "1.18.2",
-    "typescript": "~3.0.0"
+    "typescript": "~3.6.3"
   },
   "workspaces": [
     "packages/*"

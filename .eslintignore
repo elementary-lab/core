@@ -1,0 +1,6 @@
+coverage
+docs
+node_modules
+packages/**/*.js
+packages/utils/validate-identifier.ts
+
