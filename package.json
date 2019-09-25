@@ -5,8 +5,8 @@
   "scripts": {
     "bootstrap": "yarn clean:all && yarn && lerna bootstrap",
     "build": "tsc",
-    "format": "eslint --fix . --ext .ts",
-    "lint": "eslint . --ext .ts",
+    "format": "eslint packages/ --fix . --ext .ts",
+    "lint": "eslint packages/ --ext .ts",
     "clean:all": "rimraf node_modules packages/*/{node_modules}",
     "publish:monorepo": "npm run format && npm run test && lerna publish -m \"chore: monorepo version update\""
   },

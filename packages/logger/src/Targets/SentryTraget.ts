@@ -32,7 +32,7 @@ export class SentryTarget extends AbstractTarget implements SentryTargetConfig {
                     stacktrace: this.convertTrace(item.trace),
                 });
             }
-            console.log('Send event to Sentry' + eventId);
+            console.log('Send event to Sentry: ' + eventId);
         });
     }
 
