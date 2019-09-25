@@ -3,6 +3,9 @@
   "version": "1.0.4",
   "description": "",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/node": "^8.0.28"
   }

@@ -7,6 +7,9 @@
     "@types/node": "^8.0.28",
     "redis": "^2.8.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@elementary-lab/standards": "^1.0.4"
   }

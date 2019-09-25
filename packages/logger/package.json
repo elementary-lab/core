@@ -3,6 +3,9 @@
   "version": "1.0.5",
   "description": "",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@sentry/node": "5.5.0",
     "stacktrace-parser": "^0.1.6",
