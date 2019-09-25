@@ -1,12 +1,12 @@
 {
   "name": "@elementary-lab/events",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@elementary-lab/standards": "^1.0.4",
+    "@elementary-lab/standards": "^1.0.5",
     "events": "^3.0.0"
   }
 }
