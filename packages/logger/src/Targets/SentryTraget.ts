@@ -3,7 +3,7 @@ import { AbstractTarget } from './AbstractTarget';
 import * as Sentry from '@sentry/node';
 import { StackFrame } from 'stacktrace-parser';
 import { Stacktrace } from '@sentry/node';
-import { TargetConfigInterface } from '@elementary-lab/logger/Interface/LoggerConfigInterface';
+import { TargetConfigInterface } from '@elementary-lab/logger/src/Interface/LoggerConfigInterface';
 
 export class SentryTarget extends AbstractTarget implements SentryTargetConfig {
     public dsn: string;

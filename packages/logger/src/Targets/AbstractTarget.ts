@@ -1,6 +1,6 @@
 import { MessageEntity } from '../Entities/MessageEntity';
 import { LogLevel } from '../Types';
-import { TargetConfigInterface } from '@elementary-lab/logger/Interface/LoggerConfigInterface';
+import { TargetConfigInterface } from '@elementary-lab/logger/src/Interface/LoggerConfigInterface';
 
 export abstract class AbstractTarget implements TargetConfigInterface {
     public enabled = true;

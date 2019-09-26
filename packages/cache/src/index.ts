@@ -1,4 +1,4 @@
-import { CacheInterface } from '@elementary-lab/standards/CacheInterface';
+import { CacheInterface } from '@elementary-lab/standards/src/CacheInterface';
 
 export abstract class Cache implements CacheInterface {
     public keyPrefix: string;

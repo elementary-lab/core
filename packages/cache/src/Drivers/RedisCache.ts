@@ -1,5 +1,5 @@
 import { ClientOpts, RedisClient } from 'redis';
-import { Cache } from '@elementary-lab/cache/index';
+import { Cache } from '@elementary-lab/cache/src/index';
 
 export class RedisCache extends Cache {
     private readonly _config: ClientOpts;

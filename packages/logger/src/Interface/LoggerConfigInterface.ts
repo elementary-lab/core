@@ -1,5 +1,5 @@
 import { MessageEntity } from '../Entities/MessageEntity';
-import { LogLevel } from '@elementary-lab/logger/Types';
+import { LogLevel } from '@elementary-lab/logger/src/Types/index';
 
 export interface LoggerConfigInterface {
     flushInterval: number;
