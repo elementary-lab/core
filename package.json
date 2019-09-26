@@ -9,7 +9,7 @@
   },
   "scripts": {
     "bootstrap": "yarn clean:all && yarn && lerna bootstrap",
-    "build": "tsc",
+    "build": "lerna exec tsc",
     "format": "eslint packages/ --fix . --ext .ts",
     "lint": "eslint packages/ --ext .ts",
     "clean:all": "rimraf node_modules packages/*/{node_modules}",
