@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events';
-import { LoggerInterface } from '@elementary-lab/standards/LoggerInterface';
+import { LoggerInterface } from '@elementary-lab/standards/src/LoggerInterface';
 
 export class EventBus {
     private bus: EventEmitter;
