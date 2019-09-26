@@ -44,3 +44,4 @@ packages/**/*.map
 packages/**/src/**/*.js
 packages/**/src/**.js
 packages/**/src/**.d.ts
+packages/**/src/**/*.d.ts
