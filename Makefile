@@ -7,6 +7,7 @@ up:
 clear:
 	sudo rm -rf app/node_modules
 	sudo rm -rf app/yarn-error.log
+	git clean -xdf
 
 fix-permission:
 	sudo chown -R $(shell whoami):$(shell whoami) *

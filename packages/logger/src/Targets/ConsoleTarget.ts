@@ -1,7 +1,7 @@
 import { MessageEntity } from '../Entities/MessageEntity';
 import { LogLevel, LogLevelString } from '../Types';
 import { AbstractTarget } from './AbstractTarget';
-import { TargetConfigInterface } from '@elementary-lab/logger/src/Interface/LoggerConfigInterface';
+import { TargetConfigInterface } from '../Interface/LoggerConfigInterface';
 
 export class ConsoleTarget extends AbstractTarget implements ConsoleTargetConfig {
     public messagePrefixTemplate = '[{date}][{logLevel}][{category}] {text} [{userData}]';

@@ -1,5 +1,7 @@
 {
   "name": "@elementary-lab/logger",
+  "main": "lib/",
+  "typings": "lib/",
   "version": "1.1.4",
   "description": "",
   "license": "MIT",

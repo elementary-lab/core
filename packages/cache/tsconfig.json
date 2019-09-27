@@ -1,3 +1,11 @@
 {
-  "extends": "../../tsconfig.packages.json"
+  "extends": "../../tsconfig.packages.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "paths": {
+      "@elementary-lab/cache": ["src/*"]
+    }
+  }
 }
