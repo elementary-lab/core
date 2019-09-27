@@ -1,10 +1,10 @@
 {
   "name": "@elementary-lab/cache",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "",
   "license": "MIT",
   "dependencies": {
-    "@elementary-lab/standards": "^1.1.1",
+    "@elementary-lab/standards": "^1.2.0",
     "@types/node": "^8.0.28",
     "redis": "^2.8.0"
   },

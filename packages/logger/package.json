@@ -2,14 +2,14 @@
   "name": "@elementary-lab/logger",
   "main": "lib/",
   "typings": "lib/",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@elementary-lab/standards": "^1.1.1",
+    "@elementary-lab/standards": "^1.2.0",
     "@sentry/node": "^5.6.2",
     "stacktrace-parser": "^0.1.7",
     "winston": "^3.2.1"
