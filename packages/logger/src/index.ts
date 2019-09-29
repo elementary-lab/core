@@ -1,7 +1,7 @@
 import { Dispatcher } from './Dispatcher';
 import { LoggerConfigInterface } from './Interface/LoggerConfigInterface';
 import { LogLevel } from './Types';
-import { LoggerInterface } from '@elementary-lab/standards/lib/LoggerInterface';
+import { LoggerInterface } from '@elementary-lab/standards/src/LoggerInterface';
 
 export class Logger implements LoggerInterface {
     private dispatcher: Dispatcher;

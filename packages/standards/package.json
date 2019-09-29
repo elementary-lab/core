@@ -1,8 +1,6 @@
 {
   "name": "@elementary-lab/standards",
   "version": "1.2.0",
-  "main": "lib/*",
-  "typings": "lib/*",
   "description": "",
   "license": "MIT",
   "publishConfig": {
