@@ -1,13 +1,13 @@
 {
   "name": "@elementary-lab/logger",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@elementary-lab/standards": "^1.2.0",
+    "@elementary-lab/standards": "^1.3.0",
     "@sentry/node": "^5.6.2",
     "stacktrace-parser": "^0.1.7",
     "winston": "^3.2.1"
