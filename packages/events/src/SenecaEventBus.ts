@@ -1,6 +1,6 @@
 import { EventBusInterface } from '@elementary-lab/standards/src/EventBusInterface';
 
-export class SenecaEventBus implements EventBusInterface {
+export class SenecaEventBus implements EventBusInterface<SenecaEventBus> {
     public emit(eventName: string, ...args): boolean {
         throw Error('not implemented yet');
     }
@@ -11,5 +11,9 @@ export class SenecaEventBus implements EventBusInterface {
 
     public once(action: string, handler: (...args: any[]) => void): SenecaEventBus {
         throw Error('not implemented yet');
+    }
+
+    public removeListener(action: string): Promise<SenecaEventBus> {
+        return Promise.reject();
     }
 }
