@@ -14,21 +14,67 @@
     "lint": "eslint packages/ --ext .ts",
     "clean:all": "rimraf node_modules packages/*/{node_modules}",
     "travis:lint": "yarn && yarn lint",
-    "publish:monorepo": "npm run format && npm run test && lerna publish -m \"chore: monorepo version update\""
+    "publish:monorepo": "npm run format && npm run test && lerna publish -m \"chore: monorepo version update\"",
+
+    "test": "nyc jest --maxWorkers=4 --reporters=default --reporters=jest-junit",
+    "test:cli": "jest test/ --maxWorkers=4 --reporters=default --reporters=jest-junit",
+    "test:packages": "nyc jest packages/ --maxWorkers=4 --reporters=default --reporters=jest-junit",
+    "test:ci": "nyc jest --maxWorkers=$(nproc) --reporters=default --reporters=jest-junit --colors"
   },
   "devDependencies": {
     "@types/node": "^8.0.28",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.0.0",
-    "lerna": "^3.16.4",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "lerna": "^3.19.0",
     "prettier": "1.18.2",
-    "typescript": "~3.6.3"
+    "typescript": "~3.6.3",
+
+    "@types/jest": "^24.9.0",
+    "nyc": "^15.0.0",
+    "jest": "^25.1.0",
+    "jest-cli": "^25.1.0",
+    "jest-junit": "^10.0.0",
+    "jest-serializer-ansi": "^1.0.3",
+    "ts-jest": "^24.3.0"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html",
+      "cobertura"
+    ],
+    "transform": {
+      "^.+\\.(ts)?$": "ts-jest"
+    },
+    "testRegex": [
+      "/tests/.*\\.(test.js|test.ts)$",
+      "/test/.*\\.(test.js|test.ts)$"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "packages/**/*.ts"
+    ],
+    "reporter": [
+      "lcov"
+    ],
+    "all": true
+  }
 }
