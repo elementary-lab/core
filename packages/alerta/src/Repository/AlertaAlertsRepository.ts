@@ -7,9 +7,7 @@ export class AlertaAlertsRepository {
 
     public constructor(alertaApiUrl: string, alertaToken: string, axios?: AxiosInstance) {
         this.alertaToken = alertaToken;
-        this.axiosAgent = axios ?? Axios.create({
-            baseURL: alertaApiUrl,
-        });
+        this.axiosAgent = axios ?? Axios.create({baseURL: alertaApiUrl});
     }
 
     public async create(alert: CreateAlertRequestInterface): Promise<CreateAlertResponseInterface> {
