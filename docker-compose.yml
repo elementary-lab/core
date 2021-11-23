@@ -11,5 +11,6 @@ services:
     volumes:
       - .:/app/:rw
       - ${SSH_AUTH_SOCK}:/ssh-agent
+      - ~/.gitconfig:/home/node/.gitconfig:ro
     environment:
       - SSH_AUTH_SOCK=/ssh-agent
