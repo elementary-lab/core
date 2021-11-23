@@ -10,3 +10,6 @@ services:
     tty: true
     volumes:
       - .:/app/:rw
+      - ${SSH_AUTH_SOCK}:/ssh-agent
+    environment:
+      - SSH_AUTH_SOCK=/ssh-agent

@@ -2,8 +2,7 @@ export enum SeverityLevels {
     critical,
     major,
     minor,
-    warning
-
+    warning,
 }
 export enum AlertStatus {
     open = 1,
