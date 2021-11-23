@@ -19,11 +19,12 @@ export class AlertaAlertsRepository {
                         resolve(response.data);
                     }
                 })
-                .catch(() => {
+                .catch((error) => {
                     reject({
                         id: null,
                         status: 'fail',
                         message: 'Can not send new alert to alerta',
+                        data: error
                     });
                 });
         });
