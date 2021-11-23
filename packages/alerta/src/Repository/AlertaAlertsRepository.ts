@@ -5,9 +5,9 @@ export class AlertaAlertsRepository {
     private alertaToken: string;
     private axiosAgent: AxiosInstance;
 
-    public constructor(alertaApiUrl: string, alertaToken: string) {
+    public constructor(alertaApiUrl: string, alertaToken: string, axios?: AxiosInstance) {
         this.alertaToken = alertaToken;
-        this.axiosAgent = Axios.create({
+        this.axiosAgent = axios ?? Axios.create({
             baseURL: alertaApiUrl,
         });
     }
