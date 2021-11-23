@@ -21,10 +21,10 @@ export class AlertaAlertsRepository {
                 })
                 .catch((error) => {
                     reject({
-                        id: false,
+                        id: null,
                         status: 'fail',
                         message: 'Can not send new alert to alerta',
-                        data: error
+                        data: error.response.data
                     });
                 });
         });
