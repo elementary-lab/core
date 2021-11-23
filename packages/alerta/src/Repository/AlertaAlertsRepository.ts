@@ -21,7 +21,7 @@ export class AlertaAlertsRepository {
                 })
                 .catch((error) => {
                     reject({
-                        id: null,
+                        id: false,
                         status: 'fail',
                         message: 'Can not send new alert to alerta',
                         data: error
