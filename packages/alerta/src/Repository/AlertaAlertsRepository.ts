@@ -31,7 +31,7 @@ export class AlertaAlertsRepository {
         });
     }
 
-    protected getAuthHeaders() {
+    protected getAuthHeaders(): object {
         return {
             Authorization: 'Key ' + this.alertaToken,
             'Content-type': 'application/json',
