@@ -1,36 +1,47 @@
 export enum SeverityLevels {
-    critical,
-    major,
-    minor,
-    warning,
+    security = 'security',
+    critical = 'critical',
+    major = 'major',
+    minor = 'minor',
+    warning = 'warning',
+    informational = 'informational',
+    debug = 'debug',
+    trace = 'trace',
+    indeterminate = 'indeterminate',
+    cleared = 'cleared',
+    normal = 'normal',
+    ok = 'ok',
+    unknown = 'unknown',
 }
 export enum AlertStatus {
-    open = 1,
-    assign = 2,
-    ack = 3,
-    closed = 4,
-    expired = 5,
-    blackout = 6,
-    shelved = 7,
-    unknown = 9,
+    open = 'open',
+    assign = 'assign',
+    ack = 'ack',
+    closed = 'closed',
+    expired = 'expired',
+    blackout = 'blackout',
+    shelved = 'shelved',
+    unknown = 'unknown',
 }
 
 export interface CreateAlertRequestInterface {
-    attributes: {
+    resource: string;
+    event: string;
+    attributes?: {
         [key: string]: string;
     };
-    correlate: string[];
-    environment: string;
-    event: string;
-    group: string;
-    origin: string;
-    resource: string;
-    service: string[];
-    severity: SeverityLevels;
-    tags: string[];
-    text: string;
-    type: string;
-    value: string;
+    correlate?: string[];
+    environment?: string;
+    group?: string;
+    origin?: string;
+    service?: string[];
+    severity?: SeverityLevels;
+    status?: AlertStatus;
+    tags?: string[];
+    text?: string;
+    type?: string;
+    value?: string;
+    createTime?: Date;
 }
 export interface CreateAlertResponseInterface {
     alert?: {
