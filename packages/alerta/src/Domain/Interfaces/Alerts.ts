@@ -42,6 +42,7 @@ export interface CreateAlertRequestInterface {
     type?: string;
     value?: string;
     createTime?: Date;
+    rawData?: string
 }
 export interface CreateAlertResponseInterface {
     alert?: {
