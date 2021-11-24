@@ -84,6 +84,7 @@ export interface RetrieveAlertResponseInterface {
     status: string;
     total: number;
 }
+
 export interface Alert {
     attributes: Attributes;
     correlate?: (string)[] | null;
@@ -114,12 +115,14 @@ export interface Alert {
     type: string;
     value: string;
 }
+
 export interface Attributes {
     flapping: boolean;
     ip: string;
     notify: boolean;
     region: string;
 }
+
 export interface HistoryEntity {
     event: string;
     href: string;
