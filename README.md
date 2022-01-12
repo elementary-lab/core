@@ -1,6 +1,6 @@
 ```
 make build
-docker-compose exec app bash
+docker-compose run app bash
 ```
 in container
 ```bash

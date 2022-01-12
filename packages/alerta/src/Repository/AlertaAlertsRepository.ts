@@ -1,13 +1,13 @@
-import { CreateAlertRequestInterface, CreateAlertResponseInterface, SeverityLevels } from '../Domain/Interfaces/Alerts';
+import { CreateAlertRequestInterface, CreateAlertResponseInterface} from '../Domain/Interfaces/Alerts';
 import Axios, { AxiosInstance } from 'axios';
 
 export class AlertaAlertsRepository {
-    private alertaToken: string;
+    private readonly alertaToken: string;
     private axiosAgent: AxiosInstance;
 
     public constructor(alertaApiUrl: string, alertaToken: string, axios?: AxiosInstance) {
         this.alertaToken = alertaToken;
-        this.axiosAgent = axios ?? Axios.create({baseURL: alertaApiUrl});
+        this.axiosAgent = axios ?? Axios.create({ baseURL: alertaApiUrl });
     }
 
     public async create(alert: CreateAlertRequestInterface): Promise<CreateAlertResponseInterface> {
@@ -20,11 +20,18 @@ export class AlertaAlertsRepository {
                     }
                 })
                 .catch((error) => {
+                    let body;
+                    if (typeof error.response.data !== 'undefined') {
+                        body = error.response.data;
+                    } else {
+                        body = error.response;
+                    }
+
                     reject({
                         id: null,
                         status: 'fail',
                         message: 'Can not send new alert to alerta',
-                        data: error.response.data
+                        data: body
                     });
                 });
         });
