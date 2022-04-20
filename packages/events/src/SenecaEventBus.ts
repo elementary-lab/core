@@ -16,4 +16,9 @@ export class SenecaEventBus implements EventBusInterface<SenecaEventBus> {
     public removeListener(action: string): Promise<SenecaEventBus> {
         return Promise.reject();
     }
+
+    public listenerCount(action: string): number {
+        throw Error('not implemented yet');
+    }
+
 }

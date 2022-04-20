@@ -6,4 +6,6 @@ export interface EventBusInterface<T> {
     once(action: string, handler: (...args: any[]) => void): T;
 
     removeListener(action: string): Promise<T>;
+
+    listenerCount(action: string): number
 }

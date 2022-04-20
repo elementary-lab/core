@@ -28,6 +28,11 @@ export class SimpleEventBus implements EventBusInterface<SimpleEventBus> {
         return this;
     }
 
+    public listenerCount(action: string): number {
+        return this.bus.listenerCount(action);
+    }
+
+
     /**
      *
      * @param action
@@ -37,7 +42,7 @@ export class SimpleEventBus implements EventBusInterface<SimpleEventBus> {
             this.logger.debug('Remove listener', action, 'EventBus');
             this.bus.removeListener(action, () => {
                 this.logger.debug('Remove listener done', action, 'EventBus');
-                resolve();
+                resolve(this);
             });
         });
     }
