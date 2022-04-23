@@ -4,7 +4,7 @@ import { AbstractTarget } from './AbstractTarget';
 import { TargetConfigInterface } from '../Interface/LoggerConfigInterface';
 
 export class ConsoleTarget extends AbstractTarget implements ConsoleTargetConfig {
-    public messagePrefixTemplate = '[{date}][{logLevel}][{category}] {text} [{userData}]';
+    public messagePrefixTemplate = '[{date}][{logLevel}][{category}] {text} {userData}';
 
     public constructor(config: ConsoleTargetConfig) {
         super();
@@ -21,7 +21,7 @@ export class ConsoleTarget extends AbstractTarget implements ConsoleTargetConfig
             string = string.replace('{text}', item.message);
 
             if (item.data !== undefined) {
-                string = string.replace('{userData}', JSON.stringify(item.data, this.getCircularReplacer()));
+                string = string.replace('{userData}', '[' + JSON.stringify(item.data, this.getCircularReplacer()) + ']');
             } else {
                 string = string.replace('{userData}', '');
             }
