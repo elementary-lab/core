@@ -1,5 +1,7 @@
+import { EventInterface } from '@elementary-lab/standards/src/EventInterface';
+
 export interface EventBusInterface<T> {
-    emit(eventName: string, ...args): boolean;
+    emit(eventName: string | EventInterface, ...args): boolean;
 
     on(action: string, handler: (...args: any[]) => void): T;
 

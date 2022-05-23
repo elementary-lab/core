@@ -4,6 +4,7 @@ import * as Sentry from '@sentry/node';
 import { StackFrame } from 'stacktrace-parser';
 import { Stacktrace } from '@sentry/node';
 import { TargetConfigInterface } from '../Interface/LoggerConfigInterface';
+import { Primitive } from '@sentry/types/dist/misc';
 
 export class SentryTarget extends AbstractTarget implements SentryTargetConfig {
     public dsn: string;
@@ -30,6 +31,7 @@ export class SentryTarget extends AbstractTarget implements SentryTargetConfig {
                 eventId = Sentry.captureEvent({
                     message: item.message,
                     stacktrace: this.convertTrace(item.trace),
+                    tags: item.data
                 });
             }
             console.log('Send event to Sentry: ' + eventId);
@@ -59,4 +61,7 @@ interface SentryTargetConfig extends TargetConfigInterface {
     dsn: string;
     environment: string;
     release: string;
+    tags?: {
+        [key: string]: Primitive;
+    };
 }
