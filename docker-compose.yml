@@ -12,6 +12,6 @@ services:
       - .:/app/:rw
       - ${SSH_AUTH_SOCK}:/ssh-agent
       - ~/.gitconfig:/home/node/.gitconfig:ro
-      - ~/.npmrc:/home/node/.npmrc:ro
+      - ~/.npmrc:/home/node/.npmrc:rw
     environment:
       - SSH_AUTH_SOCK=/ssh-agent
